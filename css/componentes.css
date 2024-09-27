@@ -1,0 +1,30 @@
+.nav {
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+.nav > a {
+  text-decoration: none;
+  color: black;
+}
+.nav > a:hover {
+  color: aliceblue;
+}
+
+.img-navbar {
+  width: 80px;
+  margin: 10px;
+  border-radius: 50px;
+  border: 2px solid black;
+}
+.img-principal {
+  margin-top: 7%;
+  width: 635px;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
