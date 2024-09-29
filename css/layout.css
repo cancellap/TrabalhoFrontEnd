@@ -3,3 +3,9 @@
   height: 100px;
   width: 100%;
 }
+
+.layout-sobreChuck{
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}

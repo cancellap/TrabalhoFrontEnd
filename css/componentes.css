@@ -28,3 +28,22 @@
   align-items: center;
   justify-content: center;
 }
+
+.texto__sobreChuck{
+  width: 60%;
+  text-align: left;
+}
+
+.img__sobreChuck{
+  width: 40%;
+  text-align: right;
+}
+
+.img__sobreChuck img{
+  max-width: 100%;
+  height: auto;
+}
+
+.subtitulo__sobreChuck{
+  text-decoration: underline;
+}
