@@ -7,10 +7,15 @@
   width: 100%;
 }
 
+body{
+  background-color: #f4f4f4;
+
+
 .layout-sobreChuck{
   display: flex;
   justify-content: space-between;
   align-items: top;
   min-height: 100vh;
   padding: 0 20px;
+
 }
