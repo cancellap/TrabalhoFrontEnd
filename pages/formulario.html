@@ -36,36 +36,42 @@
       </div>
     </header>
     <div class="container">
-      <form id="myForm">
-        <div class="d-flex flex-column mt-5 justify-content-center">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label"
-              >Email</label
-            >
-            <input
-              type="email"
-              name="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="nome@exemplo.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label"
-              >Textarea</label
-            >
-            <textarea
-              name="texto"
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-            <button class="btn btn-outline-primary mt-5" type="submit">
-              Enviar
-            </button>
-          </div>
+      <div class="card text-center mt-5">
+        <div class="card-header">Formulário</div>
+        <div class="card-body">
+          <form id="myForm">
+            <div class="d-flex flex-column mt-5 justify-content-center">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label"
+                  >Digite seu e-mail</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="nome@exemplo.com"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Comentário</label
+                >
+                <textarea
+                  name="texto"
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+                <button class="btn btn-outline-primary mt-5" type="submit">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </form>
         </div>
-      </form>
+        <!-- <div class="card-footer text-body-secondary">2 days ago</div> -->
+      </div>
     </div>
     <script src="../js/forms.js"></script>
   </body>
