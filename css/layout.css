@@ -6,16 +6,14 @@
   height: 100px;
   width: 100%;
 }
-
-body{
+body {
   background-color: #f4f4f4;
+}
 
-
-.layout-sobreChuck{
+.layout-sobreChuck {
   display: flex;
   justify-content: space-between;
   align-items: top;
   min-height: 100vh;
   padding: 0 20px;
-
 }

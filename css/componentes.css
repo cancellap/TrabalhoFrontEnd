@@ -18,7 +18,7 @@
 }
 .img-principal {
   margin-top: 4%;
-  width: 635px;
+  width: 40%;
   border-radius: 60px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -29,12 +29,14 @@
   justify-content: center;
 }
 
-.titulo__sobreChuck{
+.titulo__sobreChuck {
   text-align: center;
   margin-top: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
+.conteudo__sobreChuck {
+  text-align: justify;
+}
 .texto__sobreChuck {
   width: 80%;
   text-align: left;
@@ -65,10 +67,10 @@
 
 .subtitulo__sobreChuck {
   display: flex;
-  align-items: center; 
-  justify-content: left; 
-  text-align: left; 
-  font-size: 24px; 
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  font-size: 24px;
 }
 
 .seta {
@@ -76,6 +78,13 @@
   width: 15px;
   margin-top: 48px;
 
+  margin-right: 10px;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 .container--piada {
   margin: 17% 26% 0 26%;
   padding-top: 10px;
