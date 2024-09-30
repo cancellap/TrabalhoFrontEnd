@@ -17,9 +17,9 @@
   border: 2px solid black;
 }
 .img-principal {
-  margin-top: 7%;
+  margin-top: 4%;
   width: 635px;
-  border-radius: 50px;
+  border-radius: 60px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -75,4 +75,38 @@
   display: flex;
   width: 15px;
   margin-top: 48px;
+
+.container--piada {
+  margin: 17% 26% 0 26%;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.card-piada {
+  margin: 0;
+  padding-top: 15px;
+  width: 40%;
+  height: 40%;
+  /* display: flex;
+  justify-content: center; */
+}
+.img--piada {
+  padding-right: 15px;
+  background: none;
+  width: 160px;
+}
+.container-botao-piada {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+#botao-piada {
+  margin-top: 30px;
+  border: none;
+  padding: 7px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
 }

@@ -1,11 +1,24 @@
 const blackList = [];
-async function getJoke() {
-    const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${sortCatego()}`);
-    const jokeData = await response.json();
-    return jokeData.value;
-}
+const h1 = document.getElementsByClassName('piada')[0];
+const audio = document.getElementById('audio');
+document.getElementById("botao-piada").addEventListener("click", async () => {
+    try {
+        const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${sortCatego()}`);
+
+        const jokeData = await response.json();
+        // const joke = jokeData.value;
+        // const traducaoPiada = await traduzirTexto(joke, 'en', 'pt');
+        // h1.textContent = `${traducaoPiada}`;
+        h1.textContent = jokeData.value;
+        audio.play();
+    } catch (e) {
+        console.log("Erro ao buscar a piada");
+    }
+
+});
+
 function sortCatego() {
-    const catego = ["animal", "career", "celebrity", "dev", "fashion", "food", "history", "money", "movie", "music", "political", "science", "sport", "travel"]
+    const catego = ["animal", "career", "celebrity", "dev", "fashion", "food", "history", "money", "movie", "music", "science", "sport", "travel"];
     let num = parseInt(Math.random() * catego.length);
     return catego[num];
 }
@@ -33,10 +46,3 @@ function sortCatego() {
 //     console.log(data);
 // }
 
-const h1 = document.getElementsByClassName('piada')[0];
-
-getJoke().then(async joke => {
-    // const traducaoPiada = await traduzirTexto(joke, 'en', 'pt');
-    // h1.textContent = `${traducaoPiada}`;
-    h1.textContent = joke
-});
