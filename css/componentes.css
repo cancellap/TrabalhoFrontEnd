@@ -28,6 +28,54 @@
   align-items: center;
   justify-content: center;
 }
+
+.titulo__sobreChuck{
+  text-align: center;
+  margin-top: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto__sobreChuck {
+  width: 80%;
+  text-align: left;
+}
+
+.img__sobreChuck {
+  right: 20px;
+  top: 50%;
+  width: 50%;
+  text-align: right;
+}
+
+.img__sobreChuck > .img1 {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid rgb(255, 136, 0);
+  margin-top: 20px;
+}
+
+.img__sobreChuck > .img2 {
+  max-width: 100%;
+  height: auto;
+  border: 5px solid rgb(255, 136, 0);
+  margin-top: 20px;
+  width: 87%;
+  margin-bottom: 20px;
+}
+
+.subtitulo__sobreChuck {
+  display: flex;
+  align-items: center; 
+  justify-content: left; 
+  text-align: left; 
+  font-size: 24px; 
+}
+
+.seta {
+  display: flex;
+  width: 15px;
+  margin-top: 48px;
+
 .container--piada {
   margin: 17% 26% 0 26%;
   padding-top: 10px;
