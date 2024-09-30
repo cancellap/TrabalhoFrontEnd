@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/componentes.css" />
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/carrossel.css">
+
+    
   </head>
   <body>
     <header class="layout-navbar">
@@ -20,25 +23,102 @@
         <div class="row">
           <div class="col-3">
             <a href="index.html">
-              <img class="img-navbar" src="/assest/img-chuckNorris.webp" alt=""
+              <img class="img-navbar" src="/img/img-chuckNorris.webp" alt=""
             /></a>
           </div>
           <div class="nav col-md-3">
             <a href="/pages/sobreChuck.html">Sobre Chuck Norris</a>
           </div>
           <div class="nav col-md-3">
+
             <a href="/pages/sobreNois.html">Sobre nos</a>
+
           </div>
           <div class="nav col-md-3">
-            <a href="/pages/api.html">Piada</a>
+            <a href="/pages/api.html">Piadas</a>
           </div>
         </div>
       </div>
     </header>
     <main class="main">
       <div class="container principal">
-        <img class="img-principal" src="/assest/chuckPrincipal.jpg" alt="" />
+        <img class="img-principal" src="/img/chuckPrincipal.jpg" alt="" />
       </div>
     </main>
-  </body>
+
+    <section>
+    <h2>VEJA ALGUMAS DE SUAS OBRAS</h2>
+    <div class="container1">
+      <button class="botao-left control" aria-label="Previous image">◀</button>
+  <button class="botao-right control" aria-label="Next Image">▶</button>
+      <div class="carrossel">
+        <div class="galeria">
+          <img
+            src="/img/chuck1.jpg"
+            alt=""
+            class="item primeiro-item"
+          />
+          <img
+            src="/img/chuck2.gif"
+            alt=""
+            class="item "
+          />
+          <img
+            src="/img/chuck3.jpg"
+            alt=""
+            class="item"
+          />
+          <img
+            src="/img/chuck4.jpg"
+            alt=""
+            class="item "
+          />
+          <img
+            src="/img/chuck5.jpg"
+            alt=""
+            class="item "
+          />
+          <img
+            src="/img/chuck6.png"
+            alt=""
+            class="item"
+          />
+          <img
+            src="/img/chuck7.jfif"
+            alt=""
+            class="item "
+          />
+          <img
+            src="/img/chuck8.jfif"
+            alt=""
+            class="item "
+          />
+          <img
+            src="/img/chuck9.jfif"
+            alt=""
+            class="item "
+          />
+          <img
+            src="/img/chuck10.jfif"
+            alt=""
+            class="item "
+          />
+          <img src="/img/chuck11.jfif" 
+          alt=""
+          class="item ">
+
+          <img src="/img/chuck12.jfif"
+           alt=""
+           class="item">
+
+           <img src="/img/chuck13.jfif" 
+           alt=""
+           class="item">
+
+        </div>
+      </div>
+    </div>
+    <script src="/js/carrossel.js"></script>
+  </section>
+    </body>
 </html>
