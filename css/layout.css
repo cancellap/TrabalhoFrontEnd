@@ -1,5 +1,8 @@
+:root {
+  --primary-color: rgb(255, 136, 0);
+}
 .layout-navbar {
-  background-color: rgb(255, 136, 0);
+  background-color: var(--primary-color);
   height: 100px;
   width: 100%;
 }
