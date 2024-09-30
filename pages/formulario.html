@@ -37,7 +37,7 @@
     </header>
     <div class="container">
       <div class="card text-center mt-5">
-        <div class="card-header">Formulário</div>
+        <div class="card-header">Contribua!</div>
         <div class="card-body">
           <form id="myForm">
             <div class="d-flex flex-column mt-5 justify-content-center">
@@ -51,10 +51,11 @@
                   class="form-control"
                   id="exampleFormControlInput1"
                   placeholder="nome@exemplo.com"
+                  required
                 />
               </div>
               <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
+                <label for="exampleFormControlTextarea1" class="form-label mt-5"
                   >Comentário</label
                 >
                 <textarea
@@ -62,15 +63,16 @@
                   class="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
+                  required
                 ></textarea>
-                <button class="btn btn-outline-primary mt-5" type="submit">
+                <button class="btn btn-outline-warning mt-5" type="submit">
                   Enviar
                 </button>
               </div>
             </div>
           </form>
         </div>
-        <!-- <div class="card-footer text-body-secondary">2 days ago</div> -->
+        <div class="card-footer text-body-secondary"></div>
       </div>
     </div>
     <script src="../js/forms.js"></script>
