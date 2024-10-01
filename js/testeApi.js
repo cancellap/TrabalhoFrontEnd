@@ -1,7 +1,9 @@
 const blackList = [];
 const h1 = document.getElementsByClassName('piada')[0];
 const audio = document.getElementById('audio');
+
 document.getElementById("botao-piada").addEventListener("click", async () => {
+    h1.innerHTML = ' <i class="fa-solid fa-spinner fa-spin" style="margin-top: 35px; margin-left: 145px"></i>'
     try {
         const response = await fetch(`https://api.chucknorris.io/jokes/random?category=${sortCatego()}`);
 
@@ -10,7 +12,7 @@ document.getElementById("botao-piada").addEventListener("click", async () => {
         // const traducaoPiada = await traduzirTexto(joke, 'en', 'pt');
         // h1.textContent = `${traducaoPiada}`;
         h1.textContent = jokeData.value;
-        audio.play();
+        // audio.play();
     } catch (e) {
         console.log("Erro ao buscar a piada");
     }

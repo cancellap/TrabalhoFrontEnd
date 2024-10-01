@@ -13,7 +13,15 @@
     <link rel="stylesheet" href="../css/layout.css" />
     <link rel="stylesheet" href="../css/componentes.css" />
     <link rel="stylesheet" href="../css/base.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
   <body>
     <header class="layout-navbar">
       <div class="container text-center">
@@ -23,30 +31,62 @@
               <img class="img-navbar" src="/img/img-chuckNorris.webp" alt=""
             /></a>
           </div>
-          <div class="nav col-md-3">
-            <a href="/pages/sobreChuck.html">Sobre Chuck Norris</a>
+          <div class="nav col-3">
+            <a href="/pages/sobreChuck.html">Chuck Norris</a>
           </div>
-          <div class="nav col-md-3">
+          <div class="nav col-3">
             <a href="/pages/sobreNois.html">Sobre nós</a>
           </div>
-          <div class="nav col-md-3">
-            <a href="/pages/api.html">Piada</a>
+          <div class="nav col-3">
+            <a style="text-decoration: underline" href="/pages/api.html"
+              >Piada</a
+            >
           </div>
         </div>
       </div>
     </header>
 
-    <div class="container--piada">
+    <div class="row container--piada">
       <audio id="audio" src="../assest/chicote.wav"></audio>
-      <img class="img img--piada" src="../assest/chuckNorris.png" alt="" />
-      <blockquote class="card-piada">
+      <div class="col-lg-2 col-sm-12">
+        <img class="img img--piada" src="../assest/chuckNorris.png" alt="" />
+      </div>
+      <div class="col-lg-1 col-sm-12"></div>
+      <blockquote class="col-lg-5 col-sm-12">
         <div class="piada"></div>
       </blockquote>
     </div>
 
     <div class="container-botao-piada">
-      <button id="botao-piada">Gerar piada</button>
+      <button class="botao-piada" id="botao-piada">Gerar piada</button>
     </div>
+
     <script src="../js/testeApi.js"></script>
+    <div class="container--footer layout-footer-margin">
+      <footer class="layout-footer layout-footer-fixed">
+        <p class="footer-conteudo">
+          &copy;
+          <a class="link-footer" href="https://github.com/gabriel-braga0"
+            >Gabriel Braga
+          </a>
+          |
+          <a class="link-footer" href="https://github.com/GustavoLPr">
+            Gustavo Leal</a
+          >
+          |
+          <a class="link-footer" href="https://github.com/TatianePink"
+            >Tatiane Pink</a
+          >
+          |
+          <a class="link-footer" href="https://github.com/rayvieira307"
+            >Rayssa Vieira |
+          </a>
+          <a class="link-footer" href="https://github.com/cancellap"
+            >Pedro Cancella
+          </a>
+          | Desenvolvido durante a residencia em TIC Serratec
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
