@@ -17,6 +17,7 @@ controls.forEach((control) => {
     if (ItemAtual >= maxItems) {
       ItemAtual = 0;
     }
+    
 
     if (ItemAtual < 0) {
       ItemAtual = maxItems - 1;
@@ -24,7 +25,6 @@ controls.forEach((control) => {
 
     items[ItemAtual].scrollIntoView({
       behavior: "smooth",
-      inline: "center"
     });
 
   });
