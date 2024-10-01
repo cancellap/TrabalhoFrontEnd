@@ -16,13 +16,11 @@ document.getElementById("myForm").addEventListener("submit", (event) => {
   })
     .then(() => {
       console.log("Adicionado com sucesso!");
+      feedback();
     })
     .catch((error) => {
       console.error("Erro ao adicionar contribuição:", error);
     });
-
-  console.log(json);
-  feedback();
 });
 
 function feedback() {
