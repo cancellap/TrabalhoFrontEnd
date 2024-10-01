@@ -7,8 +7,8 @@
   margin-bottom: 50px;
 }
 
-/*Tudo que estiver fora do container ele vai ocultar*/
 .carrossel {
+  /*Tudo que estiver fora do container ele vai ocultar*/
   overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100%;
@@ -55,20 +55,18 @@
   width: 30px;
   border: none;
   color: rgb(255, 136, 0);
-  transition: all 600ms ease-in-out;
-
   background: linear-gradient(to left, transparent 0%, black 100%);
   /*Quando o usuario passar o mouse*/
   opacity: 0.5;
   transition: all 600ms ease-in-out;
 }
 
-.botao-left:hover,
-.botao-right:hover {
-  opacity: 1;
-}
 .botao-right {
   left: auto;
   right: 0;
   background: linear-gradient(to right, transparent 0%, black 50%);
+}
+.botao-left:hover,
+.botao-right:hover {
+  opacity: 1;
 }

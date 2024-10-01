@@ -1,5 +1,5 @@
 const controls = document.querySelectorAll(".control");
-let currentItem = 0;
+let ItemAtual = 0;
 const items = document.querySelectorAll(".item");
 const maxItems = items.length;
 
@@ -9,26 +9,23 @@ controls.forEach((control) => {
     isLeft = e.target.classList.contains("botao-left");
 
     if (isLeft) {
-      currentItem -= 1;
+      ItemAtual -= 1;
     } else {
-      currentItem += 1;
+      ItemAtual += 1;
     }
 
-    if (currentItem >= maxItems) {
-      currentItem = 0;
+    if (ItemAtual >= maxItems) {
+      ItemAtual = 0;
     }
 
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
+    if (ItemAtual < 0) {
+      ItemAtual = maxItems - 1;
     }
 
-    items.forEach((item) => item.classList.remove("current-item"));
-
-    items[currentItem].scrollIntoView({
+    items[ItemAtual].scrollIntoView({
       behavior: "smooth",
       inline: "center"
     });
 
-    items[currentItem].classList.add("current-item");
   });
 });
