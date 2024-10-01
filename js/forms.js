@@ -7,18 +7,19 @@ document.getElementById("myForm").addEventListener("submit", (event) => {
     formObject[key] = value;
   });
 
-
-  const json = JSON.stringify(formObject); // Converte em JSON
-
-  fetch('https://api.mockapi.com/chucknorris/email', {
-    method: 'PUT',
+  fetch("https://66fc43b4c3a184a84d169976.mockapi.io/mensagem", {
+    method: "POST",
     headers: {
-      'x-api-key': 'd8dceb56730041b980a14cf3a041d9ab'
-    }
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formObject),
   })
-    .then(response => response.json())
-    .then(data => console.log(json))
-    .catch(error => console.error('Error:', error));
+    .then(() => {
+      console.log("Adicionado com sucesso!");
+    })
+    .catch((error) => {
+      console.error("Erro ao adicionar contribuição:", error);
+    });
 
   console.log(json);
   feedback();
@@ -31,4 +32,3 @@ function feedback() {
   document.querySelector("form .form-control").value = "";
   document.querySelector("form textarea").value = "";
 }
-// using Fetch API
